@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pokémon Connections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Pokémon Connections</h1>
+      <p>Find four groups of four Pokémon that share a connection (type, generation, family, legendary, etc.).</p>
+      <div class="controls">
+        <button id="newGameBtn">New Game</button>
+        <button id="revealBtn">Reveal Answers</button>
+        <span id="status"></span>
+      </div>
+    </header>
+
+    <section id="board" class="board" aria-live="polite"></section>
+
+    <aside class="sidebar">
+      <h2>Selection</h2>
+      <div id="selection" class="selection"></div>
+      <div class="sidebar-controls">
+        <button id="lockGroupBtn">Lock Group</button>
+        <button id="clearSelectionBtn">Clear</button>
+      </div>
+      <h2>Progress</h2>
+      <ul id="progress" class="progress"></ul>
+    </aside>
+
+    <footer>
+      <small>Images from PokéDB (img.pokemondb.net). Metadata from PokéAPI (pokeapi.co).</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
